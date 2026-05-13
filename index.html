@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <!-- ============================================================
+       ТЕХНИЧЕСКИЕ НАСТРОЙКИ
+       Здесь менять ничего не нужно.
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Название сайта во вкладке браузера — поменяйте если нужно -->
+  <title>JazzIn — Закрытый клуб · Москва</title>
+
+  <!-- Подключение шрифтов (нужен интернет) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Подключение стилей (CSS-файл с оформлением) -->
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+
+  <!-- ============================================================
+       НАВИГАЦИЯ (верхняя панель)
+
+       Чтобы изменить ссылки в меню — отредактируйте текст
+       внутри тегов <a>. Символ href="#floorplan" — это якорь,
+       он прокручивает к разделу с id="floorplan".
+       ============================================================ -->
+  <nav>
+    <div class="nav-logo">JazzIn</div>
+
+    <div class="nav-links">
+      <a href="#concept">Концепция</a>
+      <a href="#floorplan">Пространство</a>
+      <a href="#membership">Членство</a>
+      <a href="#investment">Инвестиции</a>
+    </div>
+
+    <!-- Кнопка в правом верхнем углу.
+         Замените mailto:hello@jazzin.club на свой email -->
+    <a href="mailto:hello@jazzin.club" class="nav-cta">Войти в проект</a>
+  </nav>
+
+
+  <!-- ============================================================
+       1. ГЛАВНЫЙ ЭКРАН (Hero)
+
+       Фоновое фото: images/hero.png
+       Чтобы поменять фото — замените hero.png на другой файл
+       в папке images/ и обновите путь в CSS (.hero-photo).
+       ============================================================ -->
+  <section class="hero" id="hero">
+
+    <!-- Фоновое фото -->
+    <div class="hero-photo"></div>
+
+    <!-- Тёмное затемнение поверх фото -->
+    <div class="hero-overlay"></div>
+
+    <!-- Текст и кнопки -->
+    <div class="hero-content">
+
+      <!-- Маленькая строка над заголовком -->
+      <div class="hero-eyebrow">Закрытый клуб · Москва · Большая Садовая</div>
+
+      <!-- Главный заголовок -->
+      <div class="hero-title">Jazz<em>In</em></div>
+
+      <!-- Подзаголовок -->
+      <div class="hero-subtitle">380 м² · Середина века · Только для своих</div>
+
+      <!-- Основной текст. Тег <br> — перенос строки -->
+      <div class="hero-text">
+        В городе слишком мало мест,<br>
+        где никто ничего не продаёт.<br><br>
+        JazzIn — пространство для людей,<br>
+        которые уже что-то построили<br>
+        и больше не хотят шума.
+      </div>
+
+      <!-- Кнопки.
+           Замените mailto:... на свой email или ссылку -->
+      <div class="hero-actions">
+        <a href="#investment" class="btn-primary">Войти в проект</a>
+        <a href="#floorplan" class="btn-ghost">Изучить концепцию</a>
+      </div>
+
+    </div>
+
+    <!-- Декоративная надпись "Листать вниз" -->
+    <div class="hero-scroll">Листать вниз</div>
+
+  </section>
+
+
+  <!-- ============================================================
+       2. МАНИФЕСТ
+
+       Главный смысловой блок.
+       Редактируйте текст внутри .manifesto-text
+       Тег <strong> делает текст прямым (не курсивным)
+       Тег <em> делает курсив
+       ============================================================ -->
+  <section id="manifesto">
+    <div class="s-label">Манифест</div>
+    <div class="manifesto-text">
+      JazzIn — это не ресторан.<br>
+      Не коворкинг. Не бизнес-клуб в привычном смысле.<br><br>
+      Это <strong>закрытый частный клуб</strong> — пространство,<br>
+      где <em>среда важнее сервиса.</em><br><br>
+      Сюда приходят не за столом, кофе или бокалом вина.<br>
+      Сюда приходят за <strong>состоянием.</strong>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       3. КОНЦЕПЦИЯ — три формата
+
+       Три карточки с описанием форматов.
+       Редактируйте название (.concept-name) и текст (.concept-desc)
+       ============================================================ -->
+  <section id="concept">
+    <div class="s-label">Концепция</div>
+    <div class="s-title">Три формата.<br><em>Одна среда.</em></div>
+    <div class="s-rule"></div>
+    <div class="s-body">
+      JazzIn объединяет три пространства, которые вместе создают новый тип городского места
+      для предпринимателей и творческого класса.
+    </div>
+
+    <div class="concept-grid">
+
+      <!-- Карточка 1 -->
+      <div class="concept-card">
+        <div class="concept-num">01</div>
+        <div class="concept-name">Деловой клуб</div>
+        <div class="concept-desc">
+          Мастермайнды, круглые столы, акселератор, обучение и деловые ужины.
+          Деловая часть — без офисного шума и случайных людей.
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="concept-card">
+        <div class="concept-num">02</div>
+        <div class="concept-name">Рабочая гостиная</div>
+        <div class="concept-desc">
+          Тихая работа, ноутбуки, переговоры — но в атмосфере дорогой квартиры,
+          а не открытого офиса. Спокойная продуктивность для людей своего круга.
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="concept-card">
+        <div class="concept-num">03</div>
+        <div class="concept-name">Клубное пространство JazzIn</div>
+        <div class="concept-desc">
+          Виниловая гостиная, кино, джазовые вечера, книжный клуб, камерные встречи.
+          Эмоциональное ядро проекта. Место, куда хочется возвращаться.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       4. ТРЕТЬЕ МЕСТО
+
+       Поэтический блок — ключевая идея проекта.
+       Тег <span> — приглушённые строки
+       ============================================================ -->
+  <section id="thirdplace">
+    <div class="thirdplace-inner">
+      <div class="s-label">Третье место</div>
+      <div class="s-title">Между домом<br><em>и работой.</em></div>
+      <div class="s-rule" style="margin: 14px auto 0;"></div>
+
+      <div class="thirdplace-poem">
+        Есть дом.<br>
+        Есть работа.<br>
+        И должно быть ещё одно место.<br><br>
+        <span>Не шумный бар. Не офис.</span>
+        Не случайная тусовка.<br><br>
+        А пространство,<br>
+        куда можно прийти одному<br>
+        и не чувствовать себя одиноко.
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       5. ПОЛНОЭКРАННАЯ ЦИТАТА
+
+       Фоновое фото: images/dinner-2.png
+       Редактируйте цитату внутри .cinematic-quote
+       ============================================================ -->
+  <section id="cinematic">
+
+    <!-- Фоновое фото -->
+    <div class="cinematic-photo"></div>
+
+    <!-- Затемнение -->
+    <div class="cinematic-overlay"></div>
+
+    <!-- Декоративные горизонтальные линии -->
+    <div class="cinematic-lines"></div>
+
+    <!-- Текст поверх -->
+    <div class="cinematic-text">
+      <div class="cinematic-quote">
+        Место, где сильным людям<br>
+        <em>больше не нужно<br>ничего доказывать.</em>
+      </div>
+      <div class="cinematic-sub">Пространство для тех, кто перестал что-то доказывать</div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       6. СХЕМА ПРОСТРАНСТВА
+
+       Интерактивная схема с цветными зонами.
+       Все подписи — редактируйте ниже.
+       Цвета зон задаются в CSS (классы .fp-blue, .fp-red, .fp-green, .fp-brass)
+       ============================================================ -->
+  <section id="floorplan">
+    <div class="s-label">Пространство</div>
+    <div class="s-title">Как устроено<br><em>пространство.</em></div>
+    <div class="s-rule"></div>
+    <div class="s-body">
+      380 м² на Большой Садовой. Три зоны с разным характером — и единым ощущением.
+    </div>
+
+    <div class="floorplan-wrapper">
+
+      <!-- Верхний ряд схемы: деловой клуб + вход -->
+      <div class="fp-row">
+
+        <div class="fp-zone fp-blue" style="min-height: 150px;">
+          <div class="fp-zone-label">🔵 Синяя зона</div>
+          <div class="fp-zone-name">Деловой клуб + Рабочая гостиная</div>
+          <div class="fp-zone-m2">~180 м² · Мастермайнды · Обучение · Тихая работа</div>
+        </div>
+
+        <div class="fp-zone fp-green" style="min-height: 150px;">
+          <div class="fp-zone-label">🟢 Вход</div>
+          <div class="fp-zone-name">Вход и ресепшн</div>
+          <div class="fp-zone-m2">QR-доступ · Ресепшн</div>
+        </div>
+
+      </div>
+
+      <!-- Нижний ряд схемы: центральное пространство + клубная зона -->
+      <div class="fp-row">
+
+        <div class="fp-zone fp-brass" style="min-height: 120px;">
+          <div class="fp-zone-label">🟡 Центральное пространство</div>
+          <div class="fp-zone-name">Бар · Виниловая библиотека · Общая зона</div>
+          <div class="fp-zone-m2">~126 м² · Социальная артерия</div>
+        </div>
+
+        <div class="fp-zone fp-red" style="min-height: 120px;">
+          <div class="fp-zone-label">🔴 Красная зона</div>
+          <div class="fp-zone-name">Клубное пространство JazzIn</div>
+          <div class="fp-zone-m2">~74 м² · Виниловая гостиная + Кинозал</div>
+        </div>
+
+      </div>
+
+      <!-- Подпись входа -->
+      <div class="fp-entrance">Вход · Большая Садовая · Левый торец</div>
+
+      <!-- Легенда -->
+      <div class="fp-legend">
+        <div class="fp-legend-item">
+          <div class="fp-legend-dot" style="background: rgba(60, 120, 200, 0.7);"></div>
+          <div class="fp-legend-text">Деловой клуб + Рабочая гостиная</div>
+        </div>
+        <div class="fp-legend-item">
+          <div class="fp-legend-dot" style="background: rgba(184, 152, 42, 0.7);"></div>
+          <div class="fp-legend-text">Центральное пространство · Бар · Винил</div>
+        </div>
+        <div class="fp-legend-item">
+          <div class="fp-legend-dot" style="background: rgba(200, 70, 70, 0.7);"></div>
+          <div class="fp-legend-text">Клубное пространство JazzIn</div>
+        </div>
+        <div class="fp-legend-item">
+          <div class="fp-legend-dot" style="background: rgba(80, 140, 80, 0.7);"></div>
+          <div class="fp-legend-text">Вход · Ресепшн</div>
+        </div>
+      </div>
+
+    </div><!-- конец floorplan-wrapper -->
+
+    <!-- Три карточки с описанием зон -->
+    <div class="zone-cards">
+
+      <!-- Синяя зона -->
+      <div class="zone-card blue">
+        <div class="s-label" style="margin-bottom: 10px;">🔵 Деловой клуб</div>
+        <div class="zone-card-name">Деловой клуб + Рабочая гостиная</div>
+        <ul class="zone-card-list">
+          <li>Мастермайнды и круглые столы</li>
+          <li>Мини-конференции и обучение</li>
+          <li>Деловые ужины</li>
+          <li>Рабочая гостиная — тихая работа</li>
+          <li>Переговоры и звонки</li>
+          <li>Акселератор</li>
+          <li>Ужин основателей ежемесячно</li>
+        </ul>
+      </div>
+
+      <!-- Красная зона -->
+      <div class="zone-card red">
+        <div class="s-label" style="margin-bottom: 10px;">🔴 Клубная зона</div>
+        <div class="zone-card-name">Клубное пространство JazzIn</div>
+        <ul class="zone-card-list">
+          <li>Виниловая гостиная — 4 станции</li>
+          <li>Винил · наушники · кресла · торшер</li>
+          <li>Кинозал</li>
+          <li>Проектор · диваны · вино</li>
+          <li>Джазовые вечера и кино</li>
+          <li>Книжный клуб</li>
+          <li>Камерные кураторские встречи</li>
+        </ul>
+      </div>
+
+      <!-- Золотая зона -->
+      <div class="zone-card green">
+        <div class="s-label" style="margin-bottom: 10px;">🟡 Центральное пространство</div>
+        <div class="zone-card-name">Бар · Винил · Общая зона</div>
+        <ul class="zone-card-list">
+          <li>Барная стойка · вино · кофе</li>
+          <li>Виниловая библиотека</li>
+          <li>Лёгкие закуски</li>
+          <li>Зона для коротких разговоров</li>
+          <li>Случайные знакомства</li>
+          <li>Переход между зонами</li>
+          <li>Социальная артерия клуба</li>
+        </ul>
+      </div>
+
+    </div><!-- конец zone-cards -->
+  </section>
+
+
+  <!-- ============================================================
+       7. СЦЕНЫ ИЗ БУДУЩЕГО КЛУБА
+
+       Пять блоков: фото + текст.
+       Чётные блоки (2, 4) — фото справа, текст слева.
+       Нечётные (1, 3, 5) — фото слева, текст справа.
+
+       Чтобы поменять фото: измените url в style="background-image:..."
+       Доступные фото: images/listening-room.png, cinema-lounge.png,
+                       business-wing.png, bar.png, dinner.png и другие.
+       ============================================================ -->
+  <section id="scenes">
+    <div class="scenes-intro">
+      <div class="s-label">Кадры из будущего клуба</div>
+      <div class="s-title">Пять сцен<br><em>из будущего.</em></div>
+      <div class="s-rule"></div>
+    </div>
+
+
+    <!-- СЦЕНА 1: Виниловая гостиная -->
+    <div class="scene">
+
+      <!-- Фото. Меняйте url чтобы сменить фото -->
+      <div class="scene-photo"
+           style="background-image: url('images/listening-room.png'); background-position: center;">
+      </div>
+
+      <!-- Текст -->
+      <div class="scene-copy">
+        <div class="scene-num">Сцена 01 / Виниловая гостиная</div>
+        <div class="scene-title">Место, где можно<br><em>исчезнуть на час.</em></div>
+        <div class="scene-text">
+          Четыре слуховые станции. Кресло, торшер, проигрыватель, наушники.
+          Тёплый свет 2700К. Никакого общего звука. Никого лишнего.
+        </div>
+        <div class="scene-tag">Винил · Мягкий свет · Уединение</div>
+      </div>
+
+    </div>
+
+
+    <!-- СЦЕНА 2: Кинозал -->
+    <div class="scene">
+
+      <div class="scene-photo"
+           style="background-image: url('images/cinema-lounge.png'); background-position: center;">
+      </div>
+
+      <div class="scene-copy">
+        <div class="scene-num">Сцена 02 / Кинозал</div>
+        <div class="scene-title">Вечера, которые не требуют<br><em>громкой музыки.</em></div>
+        <div class="scene-text">
+          Проектор, диваны, бокалы. Несколько человек, которые давно хотели поговорить.
+          Никакой повестки. Только время.
+        </div>
+        <div class="scene-tag">Кино · Вино · Долгие разговоры</div>
+      </div>
+
+    </div>
+
+
+    <!-- СЦЕНА 3: Деловой клуб -->
+    <div class="scene">
+
+      <div class="scene-photo"
+           style="background-image: url('images/business-wing.png'); background-position: center;">
+      </div>
+
+      <div class="scene-copy">
+        <div class="scene-num">Сцена 03 / Деловой клуб</div>
+        <div class="scene-title">Работа без<br><em>офисного шума.</em></div>
+        <div class="scene-text">
+          Основатели с ноутбуками. Тихие переговоры. Круглый стол.
+          Спокойная продуктивность — без открытого офиса, без случайных лиц.
+        </div>
+        <div class="scene-tag">Тишина · Фокус · Основатели</div>
+      </div>
+
+    </div>
+
+
+    <!-- СЦЕНА 4: Центральное пространство -->
+    <div class="scene">
+
+      <div class="scene-photo"
+           style="background-image: url('images/bar-2.png'); background-position: center;">
+      </div>
+
+      <div class="scene-copy">
+        <div class="scene-num">Сцена 04 / Центральное пространство</div>
+        <div class="scene-title">Здесь случайные встречи<br><em>становятся нужными.</em></div>
+        <div class="scene-text">
+          Бар. Виниловая стена. Движение между зонами. Короткий разговор,
+          который превращается в партнёрство.
+        </div>
+        <div class="scene-tag">Бар · Виниловая стена · Живое пространство</div>
+      </div>
+
+    </div>
+
+
+    <!-- СЦЕНА 5: Ужин основателей -->
+    <div class="scene">
+
+      <div class="scene-photo"
+           style="background-image: url('images/dinner-3.png'); background-position: center 40%;">
+      </div>
+
+      <div class="scene-copy">
+        <div class="scene-num">Сцена 05 / Ужин основателей</div>
+        <div class="scene-title">Не нетворкинг. Разговоры, после которых<br><em>появляются проекты.</em></div>
+        <div class="scene-text">
+          Длинный стол, мягкий свет, предприниматели, вино. Ежемесячный ужин
+          для участников уровня «Основатель». Закрытый формат. Без презентаций.
+        </div>
+        <div class="scene-tag">Ужин · Основатели · Без повестки</div>
+      </div>
+
+    </div>
+
+
+  </section><!-- конец scenes -->
+
+
+  <!-- ============================================================
+       8. СООБЩЕСТВО
+
+       Левая часть: процесс вступления (шаги)
+       Правая часть: типы аудитории
+       ============================================================ -->
+  <section id="community">
+    <div class="community-split">
+
+      <!-- Левая часть -->
+      <div class="community-left">
+        <div class="s-label">Кураторское сообщество</div>
+        <div class="s-title">Главный продукт —<br><em>правильная среда.</em></div>
+        <div class="s-rule"></div>
+        <div class="s-body">
+          Не кофе. Не вино. Не рабочий стол. Главный продукт JazzIn —
+          специально собранная среда людей. Случайных здесь не будет.
+        </div>
+
+        <!-- Шаги вступления -->
+        <ul class="access-steps">
+
+          <li class="access-step">
+            <div class="step-dot"></div>
+            <div class="step-text">
+              <strong>Анкета</strong>
+              Заполняется в Telegram-боте. Кто вы, чем занимаетесь, почему JazzIn.
+            </div>
+          </li>
+
+          <li class="access-step">
+            <div class="step-dot"></div>
+            <div class="step-text">
+              <strong>Рекомендация</strong>
+              Приглашение от действующего участника или самостоятельная заявка —
+              анкета рассматривается в любом случае.
+            </div>
+          </li>
+
+          <li class="access-step">
+            <div class="step-dot"></div>
+            <div class="step-text">
+              <strong>Модерация</strong>
+              Команда одобряет заявку в течение 48 часов.
+            </div>
+          </li>
+
+          <li class="access-step">
+            <div class="step-dot"></div>
+            <div class="step-text">
+              <strong>QR-доступ через Telegram</strong>
+              После одобрения — QR-карта участника в Telegram Wallet.
+              Физический вход — одним касанием.
+            </div>
+          </li>
+
+          <li class="access-step">
+            <div class="step-dot"></div>
+            <div class="step-text">
+              <strong>Членство</strong>
+              Подписка открывает доступ ко всему пространству и закрытым мероприятиям.
+            </div>
+          </li>
+
+        </ul>
+      </div><!-- конец community-left -->
+
+      <!-- Правая часть: типы участников -->
+      <div class="community-right">
+
+        <div class="archetype">
+          <div class="archetype-label">Первая аудитория</div>
+          <div class="archetype-title">Предприниматели</div>
+          <div class="s-body" style="font-size: 14px; margin-bottom: 16px;">
+            От 50 млн ₽ выручки. Основатели, владельцы бизнеса, топ-менеджеры.
+            Люди, которые уже что-то построили.
+          </div>
+          <div class="archetype-tags">
+            <span class="atag">Основатели</span>
+            <span class="atag">Владельцы бизнеса</span>
+            <span class="atag">Топ-менеджеры</span>
+            <span class="atag">Инвесторы</span>
+          </div>
+        </div>
+
+        <div class="archetype" style="padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.05);">
+          <div class="archetype-label">Вторая аудитория</div>
+          <div class="archetype-title">Творческий класс</div>
+          <div class="s-body" style="font-size: 14px; margin-bottom: 16px;">
+            Архитекторы, дизайнеры, режиссёры, музыканты, фотографы, арт-директора.
+          </div>
+          <div class="archetype-tags">
+            <span class="atag">Архитекторы</span>
+            <span class="atag">Дизайнеры</span>
+            <span class="atag">Музыканты</span>
+            <span class="atag">Режиссёры</span>
+            <span class="atag">Продюсеры</span>
+            <span class="atag">Мода</span>
+          </div>
+        </div>
+
+      </div><!-- конец community-right -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       9. АТМОСФЕРА
+
+       Фото-баннер (широкое фото на всю ширину): images/bar.png
+       Чтобы поменять — найдите .atm-photo-banner-img в CSS
+       и замените url.
+       ============================================================ -->
+  <section id="atmosphere">
+    <div class="s-label">Атмосфера</div>
+    <div class="s-title">Дорого не через «богато».<br><em>Через вкус, тишину и свет.</em></div>
+    <div class="s-rule"></div>
+
+    <!-- Широкое фото -->
+    <div class="atm-photo-banner">
+      <div class="atm-photo-banner-img"></div>
+    </div>
+
+    <!-- Текст + материалы -->
+    <div class="atm-grid">
+
+      <!-- Поэтический текст -->
+      <div class="atm-poem">
+        Тёплый свет.<br>
+        Ореховое дерево.<br>
+        Винил.<br>
+        Текстиль.<br>
+        Мягкие тени.<br>
+        <span>Аналоговый звук.</span>
+        Тихие разговоры.<br>
+        <span>Запах кофе, дерева и винной пробки.</span><br><br>
+        Это место не кричит о статусе.<br>
+        Оно просто его не объясняет.
+      </div>
+
+      <!-- Карточки материалов -->
+      <div class="atm-materials">
+
+        <div class="mat-card">
+          <!-- Цветной образец материала. Цвет меняется в style= -->
+          <div class="mat-swatch"
+               style="background: linear-gradient(135deg, #5C3D2E 0%, #8B6347 100%);">
+          </div>
+          <div class="mat-name">Ореховое дерево</div>
+          <div class="mat-desc">Панели · мебель · полки</div>
+        </div>
+
+        <div class="mat-card">
+          <div class="mat-swatch"
+               style="background: linear-gradient(135deg, #B8982A 0%, #D4AF37 50%, #8B6E14 100%);">
+          </div>
+          <div class="mat-name">Матовая латунь</div>
+          <div class="mat-desc">Детали · ручки · свет</div>
+        </div>
+
+        <div class="mat-card">
+          <div class="mat-swatch"
+               style="background: linear-gradient(135deg, #2C4A3E 0%, #4A6741 100%);">
+          </div>
+          <div class="mat-name">Оливковый вельвет</div>
+          <div class="mat-desc">Диваны · кресла</div>
+        </div>
+
+        <div class="mat-card">
+          <div class="mat-swatch"
+               style="background: radial-gradient(circle, #ffd090 0%, #c47020 40%, #1a0a00 100%);">
+          </div>
+          <div class="mat-name">Тёплый свет 2700К</div>
+          <div class="mat-desc">Торшеры · косвенный · низкий</div>
+        </div>
+
+      </div><!-- конец atm-materials -->
+    </div><!-- конец atm-grid -->
+  </section>
+
+
+  <!-- ============================================================
+       10. ЧЛЕНСТВО
+
+       Таблица с ценами. Редактируйте цифры в .tier-price
+       Выделенная карточка (класс "featured") — отмечена звёздочкой.
+       ============================================================ -->
+  <section id="membership">
+    <div class="membership-intro">
+      <div class="s-label">Членство</div>
+      <div class="s-title">Закрытая модель.<br><em>Несколько форматов входа.</em></div>
+      <div class="s-rule"></div>
+      <div class="s-body">
+        JazzIn работает на подписке. Разовый доступ — для знакомства.
+        Всё остальное — для своих.
+      </div>
+    </div>
+
+    <!-- Ценовые карточки -->
+    <div class="tiers">
+
+      <div class="tier">
+        <div class="tier-period">Разовый визит</div>
+        <!-- Цена. Измените цифру -->
+        <div class="tier-price">5 500 <span>₽</span></div>
+      </div>
+
+      <div class="tier">
+        <div class="tier-period">Неделя</div>
+        <div class="tier-price">9 000 <span>₽</span></div>
+      </div>
+
+      <!-- Выделенная карточка — добавьте или уберите класс "featured" -->
+      <div class="tier featured">
+        <div class="tier-period">Месяц</div>
+        <div class="tier-price">30 000 <span>₽ / мес</span></div>
+      </div>
+
+      <div class="tier">
+        <div class="tier-period">6 месяцев</div>
+        <div class="tier-price">150 000 <span>₽</span></div>
+      </div>
+
+      <div class="tier">
+        <div class="tier-period">Год</div>
+        <div class="tier-price">250 000 <span>₽</span></div>
+      </div>
+
+    </div>
+
+    <!-- Блок с целью -->
+    <div class="membership-goal">
+      <div class="s-label" style="margin-bottom: 12px;">Цель проекта</div>
+      <p>
+        Выйти на <strong>100–150 активных подписок</strong>.
+        При 100 подписках по 30 000 ₽ — <strong>3 000 000 ₽ выручки в месяц</strong>
+        только по базовой подписке. При 150 подписках — <strong>4 500 000 ₽.</strong>
+        Дополнительно: бар, закрытые мероприятия, акселератор, корпоративные вечера.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       11. ЦИФРОВАЯ ЭКОСИСТЕМА (Telegram)
+
+       Четыре карточки с описанием цифровой системы.
+       Редактируйте .tg-title, .tg-desc и .code-block
+       ============================================================ -->
+  <section id="telegram">
+    <div class="s-label">Цифровая экосистема</div>
+    <div class="s-title">Технологии, которые<br><em>не выглядят как технологии.</em></div>
+    <div class="s-rule"></div>
+    <div class="s-body">
+      Вся система работает через Telegram — приложение, которое уже есть у всех.
+      Технологии просто делают пространство удобным — незаметно.
+    </div>
+
+    <div class="tg-grid">
+
+      <div class="tg-card">
+        <div class="tg-icon">🔐</div>
+        <div class="tg-title">QR-доступ</div>
+        <div class="tg-desc">
+          QR-код привязан к Telegram-аккаунту. Один скан — проверка
+          статуса участника в реальном времени.
+        </div>
+        <div class="code-block">
+          /start → приветствие + анкета<br>
+          /qr → QR-код для входа<br>
+          /статус → уровень подписки<br>
+          /события → расписание
+        </div>
+      </div>
+
+      <div class="tg-card">
+        <div class="tg-icon">🧠</div>
+        <div class="tg-title">Умная CRM</div>
+        <div class="tg-desc">
+          Система запоминает предпочтения каждого участника.
+          Хост видит профиль при сканировании QR.
+        </div>
+        <div class="code-block">
+          Любимый напиток: Бургундское<br>
+          Любимое место: диван B-2<br>
+          Посещений: 23 · активный<br>
+          → [Как обычно?]
+        </div>
+      </div>
+
+      <div class="tg-card">
+        <div class="tg-icon">📅</div>
+        <div class="tg-title">События</div>
+        <div class="tg-desc">
+          Уведомления о мероприятиях приходят только тем,
+          кому они подходят по профилю.
+        </div>
+        <div class="code-block">
+          Виниловый вечер · Майлс Дэвис<br>
+          Пятница, 20:00 · Виниловая гостиная<br>
+          Осталось 4 места из 20<br>
+          [Забронировать]
+        </div>
+      </div>
+
+      <div class="tg-card">
+        <div class="tg-icon">🛎️</div>
+        <div class="tg-title">История и удержание</div>
+        <div class="tg-desc">
+          История визитов, любимое место, любимый напиток.
+          Персональный сервис без лишних слов.
+        </div>
+        <div class="code-block">
+          История: 23 визита<br>
+          Любимый вечер: пятница<br>
+          Следующее событие: 14 июня<br>
+          Персональное приглашение →
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       12. БИЗНЕС-МОДЕЛЬ
+
+       Карточки с цифрами (доходы, расходы, EBITDA).
+       Редактируйте .rev-amount и .rev-desc
+       ============================================================ -->
+  <section id="business">
+    <div class="s-label">Бизнес-модель</div>
+    <div class="s-title">Не разовый трафик.<br><em>Регулярный доход.</em></div>
+    <div class="s-rule"></div>
+    <div class="s-body">
+      JazzIn зарабатывает не на случайном потоке, а на постоянном ядре участников.
+      Удержание — главный показатель.
+    </div>
+
+    <!-- Карточки с цифрами -->
+    <div class="revenue-grid">
+
+      <div class="rev-card">
+        <div class="rev-label">Подписки · 150 участников avg</div>
+        <div class="rev-amount">~2,4 млн ₽</div>
+        <div class="rev-desc">в месяц при структуре 60% базовых + 25% социальных + 15% основателей</div>
+      </div>
+
+      <div class="rev-card">
+        <div class="rev-label">Мероприятия · 4–8 / месяц</div>
+        <div class="rev-amount">~300 тыс ₽</div>
+        <div class="rev-desc">Закрытые вечера, мастермайнды, корп. аренда</div>
+      </div>
+
+      <div class="rev-card">
+        <div class="rev-label">Бар и кухня</div>
+        <div class="rev-amount">~250 тыс ₽</div>
+        <div class="rev-desc">Вино, кофе, лёгкие закуски</div>
+      </div>
+
+      <div class="rev-card highlight">
+        <div class="rev-label">Итого выручка</div>
+        <div class="rev-amount">~2,95 млн ₽</div>
+        <div class="rev-desc">в месяц при 150 участниках</div>
+      </div>
+
+      <div class="rev-card">
+        <div class="rev-label">Аренда + операционные расходы</div>
+        <div class="rev-amount">~900 тыс ₽</div>
+        <div class="rev-desc">Аренда 380 м² + персонал + коммунальные</div>
+      </div>
+
+      <div class="rev-card highlight">
+        <div class="rev-label">Целевой EBITDA</div>
+        <div class="rev-amount">~2 млн ₽</div>
+        <div class="rev-desc">в месяц при выходе на плановую загрузку (12–18 мес)</div>
+      </div>
+
+    </div><!-- конец revenue-grid -->
+
+    <!-- Два дополнительных блока -->
+    <div class="biz-bottom">
+
+      <div class="biz-block">
+        <div class="biz-block-title">Потоки доходов</div>
+        <ul class="biz-list">
+          <li>Подписки — основной регулярный доход</li>
+          <li>Закрытые мероприятия и вечера</li>
+          <li>Ужины основателей (платный доступ)</li>
+          <li>Корпоративная аренда пространства</li>
+          <li>Акселератор и обучение</li>
+          <li>Бар и лёгкие закуски</li>
+          <li>Партнёрские мероприятия</li>
+        </ul>
+      </div>
+
+      <div class="biz-block">
+        <div class="biz-block-title">Почему удержание высокое</div>
+        <ul class="biz-list">
+          <li>Люди платят за среду, а не за стол — она не копируется</li>
+          <li>Модерация при вступлении создаёт ценность членства</li>
+          <li>Ограниченное число участников — дефицит по замыслу</li>
+          <li>Персонализированный сервис через Telegram</li>
+          <li>Регулярные закрытые мероприятия держат активность</li>
+          <li>Сетевой эффект: чем сильнее среда, тем выше ценность</li>
+        </ul>
+      </div>
+
+    </div><!-- конец biz-bottom -->
+  </section>
+
+
+  <!-- ============================================================
+       13. ИНВЕСТИЦИОННАЯ ВОЗМОЖНОСТЬ
+
+       Левая часть: аргументы для инвестора
+       Правая часть: CAPEX (бюджет)
+       Внизу: ключевые метрики + фото-полоса
+       ============================================================ -->
+  <section id="investment">
+    <div class="s-label">Инвестиционная возможность</div>
+    <div class="s-title">Инвестор входит<br><em>не в кафе.</em></div>
+    <div class="s-rule"></div>
+    <div class="s-body">
+      Инвестор входит в будущую городскую институцию. Бизнес на членстве
+      с регулярным доходом, платформу сообщества и потенциал масштабирования.
+    </div>
+
+    <div class="inv-split">
+
+      <!-- Левая часть: аргументы -->
+      <div>
+        <ul class="inv-points">
+
+          <li class="inv-point">
+            <div class="inv-point-icon">01</div>
+            <div class="inv-point-text">
+              <strong>Регулярный доход</strong>
+              Модель на подписках с предсказуемым ежемесячным доходом и высоким удержанием.
+              Не зависит от ситуативного трафика.
+            </div>
+          </li>
+
+          <li class="inv-point">
+            <div class="inv-point-icon">02</div>
+            <div class="inv-point-text">
+              <strong>Защищённый актив</strong>
+              Закрытое сообщество — самый защищённый от конкуренции актив.
+              Правильно собранная среда не копируется.
+            </div>
+          </li>
+
+          <li class="inv-point">
+            <div class="inv-point-icon">03</div>
+            <div class="inv-point-text">
+              <strong>Дефицит по замыслу</strong>
+              Максимум 150 участников. Ограниченность создаёт ценность членства
+              и не позволяет снижать цены.
+            </div>
+          </li>
+
+          <li class="inv-point">
+            <div class="inv-point-icon">04</div>
+            <div class="inv-point-text">
+              <strong>Экосистема мероприятий</strong>
+              Акселератор, ужины основателей, корп. вечера, партнёрства.
+              Дополнительные потоки дохода поверх подписки.
+            </div>
+          </li>
+
+          <li class="inv-point">
+            <div class="inv-point-icon">05</div>
+            <div class="inv-point-text">
+              <strong>Масштабирование</strong>
+              Вторая локация, цифровой сервис, партнёрства с похожими форматами
+              в других городах.
+            </div>
+          </li>
+
+          <li class="inv-point">
+            <div class="inv-point-icon">06</div>
+            <div class="inv-point-text">
+              <strong>Точка безубыточности: 120 участников</strong>
+              Консервативный сценарий. Плановый горизонт — 12–18 месяцев.
+            </div>
+          </li>
+
+        </ul>
+      </div><!-- конец левой части -->
+
+      <!-- Правая часть: CAPEX -->
+      <div>
+        <div class="capex-block">
+          <div class="s-label" style="margin-bottom: 24px;">Стартовые инвестиции (CAPEX)</div>
+
+          <!-- Строки бюджета. Меняйте цифры -->
+          <div class="capex-row">
+            <div class="capex-label">Ремонт и отделка</div>
+            <div class="capex-value">1 500 000 – 2 500 000 ₽</div>
+          </div>
+          <div class="capex-row">
+            <div class="capex-label">Мебель (стиль середины века)</div>
+            <div class="capex-value">~1 230 000 ₽</div>
+          </div>
+          <div class="capex-row">
+            <div class="capex-label">Оборудование (звук / видео / бар)</div>
+            <div class="capex-value">~640 000 ₽</div>
+          </div>
+          <div class="capex-row">
+            <div class="capex-label">IT + Telegram-бот</div>
+            <div class="capex-value">~200 000 ₽</div>
+          </div>
+          <div class="capex-row">
+            <div class="capex-label">Свет, декор, растения, текстиль</div>
+            <div class="capex-value">~420 000 ₽</div>
+          </div>
+          <div class="capex-row">
+            <div class="capex-label">Брендинг, вывеска, полиграфия</div>
+            <div class="capex-value">~100 000 ₽</div>
+          </div>
+          <!-- Итоговая строка — выделена -->
+          <div class="capex-row">
+            <div class="capex-label">Итого CAPEX</div>
+            <div class="capex-value">~4,5 – 5,5 млн ₽</div>
+          </div>
+
+          <!-- Дополнительные параметры -->
+          <div style="margin-top: 20px; padding-top: 16px;
+                      border-top: 1px solid rgba(255,255,255,0.05);
+                      font-family: 'DM Mono', monospace; font-size: 9px;
+                      color: var(--text-dim); line-height: 1.9; letter-spacing: 0.04em;">
+            Окупаемость: 24–30 мес при 150 активных участниках<br>
+            Безубыточность: ~120 участников / мес<br>
+            Первые 3 мес — формирование сообщества до открытия
+          </div>
+        </div>
+      </div><!-- конец правой части -->
+
+    </div><!-- конец inv-split -->
+
+    <!-- Ключевые метрики -->
+    <div class="inv-metrics">
+
+      <div class="inv-metric">
+        <div class="inv-metric-value">120</div>
+        <div class="inv-metric-label">Точка безубыточности<br>(участников)</div>
+      </div>
+
+      <div class="inv-metric">
+        <div class="inv-metric-value">~2 млн ₽</div>
+        <div class="inv-metric-label">Целевой EBITDA<br>в месяц</div>
+      </div>
+
+      <div class="inv-metric">
+        <div class="inv-metric-value">24–30 мес</div>
+        <div class="inv-metric-label">Окупаемость<br>инвестиций</div>
+      </div>
+
+    </div>
+
+    <!-- Фото-полоса с цитатой -->
+    <div class="inv-photo-strip">
+      <div class="inv-photo-strip-img"></div>
+      <div class="inv-strip-text">
+        <div class="inv-strip-quote">
+          Некоторые места нельзя масштабировать быстро.<br>
+          Именно поэтому они становятся важными.
+        </div>
+        <div class="inv-strip-label">
+          JazzIn · Москва<br>
+          Большая Садовая
+        </div>
+      </div>
+    </div>
+
+  </section><!-- конец investment -->
+
+
+  <!-- ============================================================
+       14. ФИНАЛЬНЫЙ ЭКРАН
+
+       Фоновое фото: images/listening-room.png
+       Чтобы поменять — найдите .final-photo в CSS
+
+       Замените mailto:... на свой реальный email
+       ============================================================ -->
+  <section id="final">
+
+    <!-- Фоновое фото -->
+    <div class="final-photo"></div>
+
+    <!-- Тёмное затемнение -->
+    <div class="final-overlay"></div>
+
+    <!-- Текст -->
+    <div class="final-inner">
+
+      <div class="final-eyebrow">Приглашение · Только для своих</div>
+
+      <div class="final-text">
+        Некоторые места нельзя масштабировать быстро.<br>
+        Именно поэтому они становятся важными.
+      </div>
+
+      <!-- Логотип -->
+      <div class="final-name">Jazz<em>In</em></div>
+
+      <!-- Адрес -->
+      <div class="final-address">
+        Закрытый клуб · Москва · Большая Садовая · 380 м²
+      </div>
+
+      <!-- Кнопки. Замените mailto:... на свой email -->
+      <div class="final-actions">
+        <a href="mailto:hello@jazzin.club" class="btn-primary">Стать первым инвестором</a>
+        <a href="mailto:hello@jazzin.club" class="btn-ghost">Запросить презентацию</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       ПОДВАЛ
+
+       Редактируйте текст в .logo и .copy
+       ============================================================ -->
+  <footer>
+    <div class="logo">J A Z Z I N</div>
+    <div class="copy">Закрытый клуб · Москва · 2025 · Только для своих</div>
+  </footer>
+
+
+  <!-- ============================================================
+       ПОДКЛЮЧЕНИЕ СКРИПТОВ
+       Этот тег должен быть последним перед </body>
+       ============================================================ -->
+  <script src="scripts/main.js"></script>
+
+
+</body>
+</html>
